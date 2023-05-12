@@ -1,0 +1,2 @@
+<!-- - Pessoas BR: Maujor, Zeno Rocha, Lucas Santos, Sergio Lopes, Willian Justen, Felipe Fialho, Loiane Groner, Rodrigo Branas, André Staltz\*
+- Pessoas Ext: : Addy Osmani, Paul Irish, Eric Elliot, Kyle Simpson, Douglas Crockford, Nicolas Gallagher, Nicholas C. Zakas, Ilya grigorik, Elijah Manor, Kent C. Dodds, Wes Bos, Stoyan Stefanov, John Resig, Eric Meyer (reset css, um nerd em css), Brendan Eich, Axel Rauschmayer (exploring js)) -->
