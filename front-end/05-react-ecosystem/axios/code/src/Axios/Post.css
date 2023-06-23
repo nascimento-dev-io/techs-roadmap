@@ -1,0 +1,32 @@
+.container {
+  max-width: 600px;
+
+  margin: 0 auto;
+  padding: 15px;
+
+  text-align: center;
+
+  border-radius: 8px;
+  background-color: #2E4159;
+  color: #c5c4d8;
+}
+
+.post-title {
+
+  text-align: center;
+  font-size: 18px;
+}
+
+.post-body{
+  margin: 8px;
+}
+
+.post-btn {
+  padding:16px;
+}
+
+.container-crud-btns {
+  display: flex;
+  justify-content: center;
+  gap: 4px;;
+}

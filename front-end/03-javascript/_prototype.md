@@ -4,7 +4,7 @@ Em javascript tudo é **objeto**, e a herança se dá através de `prototype cha
 
 Cada função possui uma propriedade chamada **prototype** que faz referência ao seu prototipo ( métodos e propriedades ).
 
-![](../images/prototype-proto2.webp)
+![](../_images/prototype-proto2.webp)
 
 > Apenas funções possuem a propriedade **prototype** e so as funções construtoras a utiliza.
 >
@@ -29,7 +29,7 @@ A cadeia de protótipo termina quando a busca encontra o último objeto da cadei
 
 <p align='center'> Prototype chain - Diagrama simples</p>
 
-![]./images/prototype-chain.png)
+![]./_images/prototype-chain.png)
 
 Quando chamamos um método ou propriedade que o objeto atual não possui, a engine js busca no nível superior da cadeia de protótipo até o último elo ( **Object** ), caso não seja encontrado **undefined** é retornado.
 

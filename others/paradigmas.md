@@ -54,7 +54,7 @@ const mediaTurma = media(notas);
 console.log(`A média é ${mediaTurma}`);
 ```
 
-**Resolução na forma declativa** criando funções menorem resolvendo algo mais especifico e sendo utilizado como parâmentros de outra função usando composição.
+**Resolução na forma declarativa** criando funções menores resolvendo algo mais especifico e sendo utilizado como parâmetros de outra função usando composição.
 
 ```js
 const notas = [8, 5, 4.5, 9, 6, 10];
@@ -68,9 +68,9 @@ console.log(`A média é ${mediaTurma}`);
 
 ### Procedural
 
-O paradigma procedural é baseado em programação imperativa, seu surgimento foi marcado pelo artigo que deu fim ao Goto statement que lidava com desvios no código fazendo com que se tornasse o conhecido spaghetti code, ou seja, código com muitos desvios e de dificil compreenção.
+O paradigma procedural é baseado em programação imperativa, seu surgimento foi marcado pelo artigo que deu fim ao Goto statement que lidava com desvios no código fazendo com que se tornasse o conhecido spaghetti code, ou seja, código com muitos desvios e de difícil compreensão.
 
-A programação procedural utiliza modularição, ( rotinas ou função), com isso trata melhor gerenciamento de escopo, o que evita possiveis bug's no softwares causados por variáveis em escopo global, alguns exemplos de linguagens são **C**, **Pascal**, **Fortran**...
+A programação procedural utiliza modularização, ( rotinas ou função), com isso trata melhor gerenciamento de escopo, o que evita possíveis bug's no softwares causados por variáveis em escopo global, alguns exemplos de linguagens são **C**, **Pascal**, **Fortran**...
 
 ### Orientação a objetos
 
@@ -101,4 +101,4 @@ b.name = 'Jorge';
 console.log(a); // {name: 'Jorge'}
 ```
 
-O compartillhamento de endereço de memória tem o foco em diminuir o consumo, uma vez que não era barato e nem existiam disponibilidade de muita memória para utilização no passado.
+O compartilhamento de endereço de memória tem o foco em diminuir o consumo, uma vez que não era barato e nem existiam disponibilidade de muita memória para utilização no passado.

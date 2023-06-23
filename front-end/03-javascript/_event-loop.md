@@ -10,7 +10,7 @@ Uma engine Javascript é um programa ou um interpretador que executa código Jav
 
 A engine mais famosa do javascript é a **V8** da Google que é a mesma utilizada pelo **NodeJs**, vamos começar por ela, abaixo uma representação simplificada.
 
-![](../images/engine-js-1.webp)
+![](../_images/engine-js-1.webp)
 
 A engine consiste de dois principais componentes:
 
@@ -26,7 +26,7 @@ Então, de onde elas vem?
 
 Acontece que a realidade é um pouco mais complicada.
 
-![](../images/engine-js-2.webp)
+![](../_images/engine-js-2.webp)
 
 Então, temos a engine, mas na verdade tem muito mais. Temos essas coisas das quais chamamos Web APIs que são fornecidas pelos browsers, como o **DOM**, **AJAX**, **setTimeout** e muito mais.
 
@@ -51,7 +51,7 @@ printSquare(5);
 
 Quando a engine começa a executar esse código, a Call Stack vai estar vazia. Depois, os passos serão os seguintes:
 
-![](../images/engine-js-3.webp)
+![](../_images/engine-js-3.webp)
 
 > Cada entrada na Call Stack é chamada de **Stack frame**.
 
@@ -72,7 +72,7 @@ start();
 
 Se isso é executado no Chrome, o seguinte stack trace vai ser produzido:
 
-![](../images/stack-trace.png)
+![](../_images/stack-trace.png)
 
 **"Explodir a stack”** — isso acontece quando você chega no tamanho máximo da Call Stack. E o que poderia acontecer muito facilmente, especialmente se você está utilizando recursão sem testar seu código muito extensivamente. Dê uma olhada neste exemplo de código:
 
@@ -85,7 +85,7 @@ foo();
 
 Quando a engine começa a executar esse código, ela começa chamando a função “foo”. Essa função, no entanto, é recursiva e começa a chamar ela mesmo sem qualquer condição para terminar. Então em cada ponto da execução, a mesma função é adicionada para a Call Stack de novo e de novo. Isso parece alguma assim:
 
-![](../images/engine-js-4.webp)
+![](../_images/engine-js-4.webp)
 
 > Em algum ponto, no entanto, o número de chamadas de função na Call Stack excede o tamanho atual da Call Stack, e o browser decide tomar uma ação, lançando um erro.
 
@@ -101,7 +101,7 @@ Você pode perguntar — Por que isso é um problema ? O problema é que enquant
 
 E esse não é o único problema. Uma vez que o browser começa processar muitas tarefas na Call Stack, ele pode parar de responder por um longo tempo. E a maioria dos browsers tomam uma ação criando um erro, perguntando se você quer encerrar a página web.
 
-![../images/error-browser.webp)
+![../_images/error-browser.webp)
 
 Agora, essa não é a melhor experiência do usuário não é?
 
@@ -119,13 +119,13 @@ O navegador é então configurado para escutar a resposta da rede, e quando tive
 
 Vamos ver o diagrama abaixo:
 
-![../images/event-loop-1.webp)
+![../_images/event-loop-1.webp)
 
 E quais são essas APIs da Web? Em essência, eles são tópicos que você não pode acessar, você pode apenas fazer chamadas para eles. Eles são as partes do navegador nas quais a simultaneidade entra em ação. Se você é um desenvolvedor do Node.js, essas são as APIs do C++.
 
 Então, o que é o event loop depois de tudo ?
 
-![../images/event-loop-2.webp)
+![../_images/event-loop-2.webp)
 
 O Event Loop tem um trabalho simples — para monitorar a call stack e a callback queue. Se a call stack estiver vazia, ela pegará o primeiro evento da fila e a empurrará para a call stack, que efetivamente a executa.
 
@@ -143,7 +143,7 @@ setTimeout(function cb1() {
 console.log('Bye');
 ```
 
-![../images/event-loop-gif.gif)
+![../_images/event-loop-gif.gif)
 
 1. O estado é claro. O console do navegador é claro e a call stack está vazia.
 2. `console.log('Hi')` é adicionado à call stack.

@@ -14,7 +14,7 @@ Técnicas **async** ( assíncronas ) são muito úteis, principalmente na progra
 
 Uma **thread** é basicamente um único processo que um programa pode usar para concluir tarefas. Cada thread só pode fazer uma tarefa de cada vez:
 
-![](../images/tarefas-sync.png)
+![](../_images/tarefas-sync.png)
 
 Cada tarefa será executada sequencialmente, uma tarefa tem que ser concluída antes que a próxima possa ser iniciada.
 
@@ -24,7 +24,7 @@ Depois de um tempo, o JavaScript ganhou algumas ferramentas para ajudar em tais 
 
 > _Você geralmente usaria uma worker para executar um processo pesado para que a UI não seja bloqueada_.
 
-![](../images/main-work-thread.png)
+![](../_images/main-work-thread.png)
 
 > **Main thread**: Tarefa A --> Tarefa C
 

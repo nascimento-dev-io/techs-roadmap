@@ -1,0 +1,75 @@
+#root {
+  width: 100vw;
+  /* background-color: #2F3D40; */
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  padding: 8px;
+}
+
+form, ul {
+  max-width: 600px;
+  width: 90%;
+
+  margin: 0 auto;
+
+  padding: 16px;
+}
+
+form label {
+  display: block;
+
+  margin-bottom: 8px;
+}
+
+ul li {
+  height: 100%;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding:12px;
+  border-radius: 6px;
+
+  background-color: #161f27;
+
+}
+
+ul li + li {
+  margin-top: 6px;;
+}
+
+ul li button {
+  margin: 0;
+}
+
+form div.checks label, form div.radios label{
+  display: inline-block;
+
+  margin: 4px 0;
+}
+button {
+  color: #fff;
+  background-color: #161f27;
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
