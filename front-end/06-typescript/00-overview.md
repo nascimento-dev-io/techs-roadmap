@@ -1,6 +1,12 @@
 ## TypeScript
 
-TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela é uma extensão da linguagem JavaScript que adiciona recursos de tipagem estática ao JavaScript, tornando-se uma opção popular para desenvolvimento de aplicativos web e outros projetos. Em resumo, o TypeScript oferece uma camada de tipos estáticos que permitem aos desenvolvedores declarar tipos de variáveis, argumentos de função e retornos de função.
+TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela é uma extensão da linguagem JavaScript que adiciona recursos de tipagem estática ao JavaScript, tornando-se uma opção popular para desenvolvimento de aplicativos web e outros projetos.
+
+- [TypeScript](#typescript)
+  - [Vantagens do TypeScript:](#vantagens-do-typescript)
+  - [Desvantagens do TypeScript:](#desvantagens-do-typescript)
+  - [Inferência de tipos](#inferência-de-tipos)
+  - [Configurando o typescript](#configurando-o-typescript)
 
 ### Vantagens do TypeScript:
 
@@ -32,7 +38,9 @@ A inferência de tipos é um recurso poderoso do TypeScript que permite ao compi
 
 O TypeScript usa um sistema de tipos estático, o que significa que os tipos são verificados em tempo de compilação, antes de o código ser executado. Isso é diferente do JavaScript padrão, que é de tipagem dinâmica e verifica os tipos em tempo de execução.
 
-Quando você declara uma variável sem especificar explicitamente seu tipo, o TypeScript tenta inferir o tipo com base no valor atribuído a ela. Aqui está um exemplo:
+Quando você declara uma variável sem especificar explicitamente seu tipo, o TypeScript tenta inferir o tipo com base no valor atribuído a ela.
+
+Aqui está um exemplo:
 
 ```ts
 let mensagem = "Olá, TypeScript!"; // O TypeScript infere que 'mensagem' é do tipo 'string'
@@ -40,7 +48,9 @@ let mensagem = "Olá, TypeScript!"; // O TypeScript infere que 'mensagem' é do 
 
 Neste caso, o TypeScript deduz que a variável `mensagem` deve ser uma string porque ela recebeu um valor de texto.
 
-A inferência de tipos também pode ocorrer em funções. Quando você define uma função e não especifica os tipos de seus parâmetros ou retorno, o TypeScript tenta inferi-los com base nos argumentos passados e no que é retornado dentro da função. Aqui está um exemplo:
+A inferência de tipos também pode ocorrer em funções. Quando você define uma função e não especifica os tipos de seus parâmetros ou retorno, o TypeScript tenta inferi-los com base nos argumentos passados e no que é retornado dentro da função.
+
+Aqui está um exemplo:
 
 ```ts
 function soma(a, b) {
@@ -62,7 +72,7 @@ Para configurar o TypeScript e começar a utilizá-lo em seus projetos, siga os 
 
 **Passo 1**: Instalação do TypeScript
 
-Primeiro, você precisa ter o Node.js instalado no seu sistema. Se ainda não tiver, faça o download e instale-o a partir do site oficial (https://nodejs.org/).
+Primeiro, você precisa ter o **Node.js** instalado no seu sistema. Se ainda não tiver, faça o download e instale-o a partir do site oficial (https://nodejs.org/).
 
 Após a instalação do Node.js, abra um terminal ou prompt de comando e execute o seguinte comando para instalar o TypeScript globalmente no seu sistema:
 
@@ -97,10 +107,19 @@ Agora você pode começar a escrever o código TypeScript nos arquivos com a ext
 
 Depois de escrever seu código TypeScript, você precisa compilá-lo para JavaScript. Para isso, basta executar o comando `tsc` no terminal na pasta raiz do projeto (onde está localizado o arquivo` tsconfig.json`).
 
-```ts
-tsc;
+```shell
+tsc
 ```
 
 Agora, você encontrará os arquivos JavaScript gerados na pasta de saída configurada no arquivo tsconfig.json.
 
 Esses são os passos básicos para configurar e usar o TypeScript em seus projetos. A partir daqui, você pode explorar recursos avançados, como módulos, decorators, etc., para aproveitar ao máximo o poder do TypeScript no desenvolvimento de aplicativos escaláveis e mais seguros.
+
+Existem ferramentas que o auxiliaram no seu desenvolvimento como tais como:
+
+- [TS Node Dev](https://www.npmjs.com/package/ts-node-dev) - permite que você execute diretamente arquivos TypeScript sem a necessidade de prévia transpilação manual.
+- [Zod](https://zod.dev/) - bibliotecas de validação de esquema typescript-first.
+- [TS Jest](https://www.npmjs.com/package/ts-jest) - Um transformador Jest com suporte a sourcemap que permite usar Jest para testar projetos escritos em TypeScript.
+- [Typescript Eslint](https://typescript-eslint.io/getting-started) - permite que o ESLint analise e valide código TypeScript de maneira mais precisa.
+
+Essas sao apenas alguns exemplos de ferramentas que o ajudaram no seu desenvolvimento, porem existem inúmeras outras que vamos conhecemos conforme avancemos.

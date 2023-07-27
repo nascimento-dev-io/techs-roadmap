@@ -1,6 +1,6 @@
 ## Tipos Básicos em TypeScript
 
-Em TypeScript, existem várias tipagens básicas que podem ser usadas para declarar os tipos de variáveis. Abaixo estão algumas das tipagens básicas mais comuns com exemplos de código:
+Em TypeScript, existem várias tipagens básicas que podem ser usadas para declarar os tipos de variáveis. Abaixo estão alguns exemplos dos tipos mais comuns:
 
 `number`: Representa números, tanto inteiros como de ponto flutuante.
 Exemplo:

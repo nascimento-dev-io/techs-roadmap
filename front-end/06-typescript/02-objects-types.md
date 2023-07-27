@@ -104,7 +104,7 @@ const partialInfo: PartialPerson = {
 
 > Esses são apenas alguns exemplos dos diversos usos de type aliases em TypeScript. Eles podem ser extremamente úteis para tornar o código mais legível e fácil de manter.
 
-## Utility Types
+### Utility Types
 
 Existem diversos tipos utilitários que podem ser usados para criar tipos mais complexos ou manipular tipos existentes de maneira mais conveniente. Abaixo estão alguns dos tipos utilitários mais comuns com exemplos de código:
 
