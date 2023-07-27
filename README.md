@@ -1,0 +1,19 @@
+<h1 align="center"> Techs Roadmap </h1>
+
+<img src="./front-end/_images/roadmap.png">
+
+Repositório para documentar o processo de aprendizado de tecnologias de forma introdutória seguindo como base o roadmap do [Developer Roadmaps](https://roadmap.sh/roadmaps), focado inicialmente em tecnologias do #FrontEnd.
+
+### Front End Roadmap
+
+- [Internet](./front-end/01-internet/)
+- [HTML](./front-end/02-html/)
+- [CSS](./front-end/03-css/)
+- [JavaScript](./front-end/04-javascript/)
+- [Git](./front-end//04-git/)
+- [React Ecosystem](./front-end/05-react-ecosystem/react/)
+- - [Axios](./front-end/05-react-ecosystem//axios/)
+- - [React Router](./front-end/05-react-ecosystem/react-router/)
+- - [Styled Components](./front-end/05-react-ecosystem/styled-components/)
+- - [Tools ( Babel | EsLint | Prettier | Webpack )](./front-end/05-react-ecosystem/tools/)
+- [TypeScript](./front-end/06-typescript/)
